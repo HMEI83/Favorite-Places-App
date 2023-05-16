@@ -1,7 +1,6 @@
 import 'package:favorite_places_app/providers/user_places.dart';
+import 'package:favorite_places_app/widgets/image_input.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class AddPlacesScreen extends ConsumerStatefulWidget {
@@ -48,6 +47,10 @@ class _AddPlacesScreenState extends ConsumerState<AddPlacesScreen> {
               style:
                   TextStyle(color: Theme.of(context).colorScheme.onBackground),
             ),
+            const SizedBox(
+              height: 10,
+            ),
+            ImageInput(),
             const SizedBox(
               height: 16,
             ),
