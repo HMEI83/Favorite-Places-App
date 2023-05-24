@@ -4,8 +4,11 @@ import 'dart:io';
 final uuid = Uuid();
 
 class PlaceLocation {
-  const PlaceLocation(
-      {required this.latitude, required this.longitude, required this.address});
+  const PlaceLocation({
+    required this.latitude,
+    required this.longitude,
+    required this.address,
+  });
 
   final double latitude;
   final double longitude;
